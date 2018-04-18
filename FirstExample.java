@@ -1,6 +1,11 @@
 //STEP 1. Import required packages
 import java.sql.*;
 
+
+//be sure to set the classpath to iinclude the current
+//directory as well as the 
+//directory where the .jar file
+
 public class FirstExample {
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
@@ -50,15 +55,18 @@ public class FirstExample {
             }finally{
                   //finally block used to close resources
                   try{
-                  if(stmt!=null)
-                        stmt.close();
+                        (stmt!=null)
+                              stmt.close();
                   }catch(SQLException se2){
-                  }// nothing we can do
+                        // nothing we can do
+                  }
+
+                  
                   try{
-                  if(conn!=null)
-                        conn.close();
+                        if(conn!=null)
+                              conn.close();
                   }catch(SQLException se){
-                  se.printStackTrace();
+                        se.printStackTrace();
                   }//end finally try
             }//end try
             System.out.println("Goodbye!");
