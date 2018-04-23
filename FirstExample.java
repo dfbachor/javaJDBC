@@ -12,8 +12,8 @@ public class FirstExample {
    static final String DB_URL = "jdbc:mysql://107.180.2.3:3306/dfb";
 
    //  Database credentials
-   static final String USER = "dbachor";
-   static final String PASS = "detorres1";
+   static final String USER = "cisc150student";
+   static final String PASS = "cisc150student";
       public static void main(String[] args) {
             Connection conn = null;
             Statement stmt = null;
