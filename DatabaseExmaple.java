@@ -6,7 +6,7 @@ import java.sql.*;
 //directory as well as the 
 //directory where the .jar file
 
-public class FirstExample {
+public class DatabaseExmaple {
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
    static final String DB_URL = "jdbc:mysql://107.180.2.3:3306/dfb";
