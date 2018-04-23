@@ -55,7 +55,7 @@ public class FirstExample {
             }finally{
                   //finally block used to close resources
                   try{
-                        (stmt!=null)
+                        if(stmt!=null)
                               stmt.close();
                   }catch(SQLException se2){
                         // nothing we can do
